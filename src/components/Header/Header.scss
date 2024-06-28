@@ -1,0 +1,192 @@
+@import '@/styles/mixins';
+
+.o2c-header_desktop{
+  --header-height: 111px;
+  --header-logo-width: 78px;
+  --header-logo-height: 40px;
+}
+
+.o2c-header_mobile{
+  --header-height: 76px;
+  --header-burger-logo-position-offset: 20px;
+  --header-burger-logo-z-index: 1000;
+  --header-burger-button-size: 36px;
+  --header-burger-button-padding: 11px;
+  --header-burger-button-position-offset: var(--header-burger-logo-position-offset);
+  --header-burger-button-z-index: var(--header-burger-logo-z-index);
+  --header-burger-menu-padding: 40px;
+  --header-burger-menu-footer-height: 278px;
+  --header-burger-menu-footer-contacts-gap: 8px;
+  --header-logo-width: 70px;
+  --header-logo-height: 36px;
+}
+
+.o2c-header{
+  --header-links-link-padding: 10px 14px;
+  --header-color: var(--color-white);
+
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: var(--header-color);
+  display: flex;
+  width: 100%;
+  height: var(--header-height);
+
+  &__container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-image{
+    width: var(--header-logo-width);
+    height: var(--header-logo-height);
+  }
+}
+
+.o2c-header_desktop .o2c-header{
+    &__links{
+      display: flex;
+    }
+  
+    &__links-item{
+      padding: var(--header-links-link-padding)
+    }
+
+    &__link{
+
+      @include hover-underline;
+
+      &::before{
+        background-color: var(--header-color);
+      }
+    }
+}
+
+.o2c-header_mobile .o2c-header{
+  &__logo{
+    position: absolute;
+    top: var(--header-burger-logo-position-offset);
+    left: var(--header-burger-logo-position-offset);
+    z-index: var(--header-burger-button-z-index);
+  }
+
+  &__burger-button{
+    height: var(--header-burger-button-size);
+    width: var(--header-burger-button-size);
+    position: absolute;
+    top: var(--header-burger-button-position-offset);
+    right: var(--header-burger-button-position-offset);
+    padding: var(--header-burger-button-padding);
+    z-index: var(--header-burger-button-z-index);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--color-white);
+    border-radius: var(--border-radius-default);
+
+    &, &:focus{
+      outline: 0;
+    }
+  }
+
+  &__burger-bar{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color-base-background);
+    transition: transform 0.1s ease;
+
+    &_active{
+      width: 20px;
+      border-radius: 4px;
+    }
+
+    &_active:first-child{
+      transform: translateX(-4px) translateY(5px) rotate(45deg);
+    }
+
+    &_active:nth-child(2){
+      transform: translateX(-4px) translateY(-5px) rotate(-45deg);
+    }
+
+    &_hidden{
+      display: none;
+    }
+  }
+}
+
+.o2c-burger-menu{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(13 51 86);
+  background: linear-gradient(0deg, rgb(13 51 86 / 100%) 0%, rgb(0 54 100 / 100%) 100%);
+  transition: left 0.2s ease;
+
+  &_open{
+    left: 0;
+  }
+
+  &__navigation{
+    margin-top: var(--header-height);
+    border-top: 1px solid var(--color-line-generic-light);
+    padding: var(--header-burger-menu-padding) 0;
+    height: calc(100vh - var(--header-burger-menu-footer-height) - var(--header-height));
+    overflow-y: auto;
+
+    @include scrollbar-thin;
+  }
+
+  &__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__link{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__footer{
+    position: sticky;
+    background-color: var(--color-blue-primary);
+    bottom: 0;
+    height: var(--header-burger-menu-footer-height);
+  }
+
+  &__footer-contacts{
+    padding-top: var(--header-burger-menu-padding);
+    border-top: 1px solid var(--color-line-generic-light);
+  }
+
+  &__footer-title{
+    margin-bottom: 32px;
+  }
+
+  &__footer-contacts-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--header-burger-menu-footer-contacts-gap);
+  }
+
+  &__footer-contact-title{
+    margin-bottom: 4px;
+  }
+
+  &__footer-contact-link{
+    opacity: 0.5;
+    font-size: 16px;
+  }
+}

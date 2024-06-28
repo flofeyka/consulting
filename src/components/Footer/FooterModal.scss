@@ -1,0 +1,32 @@
+.o2c-footer-modal{
+  --footer-modal-padding: 40px 60px;
+  --footer-modal-min-height: 240px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content{
+    padding: var(--footer-modal-padding);
+  }
+
+  &__footer{
+    background: rgb(13 51 86);
+    background: linear-gradient(0deg, rgb(13 51 86 / 100%) 0%, rgb(0 54 100 / 100%) 100%);
+    padding: var(--footer-modal-padding);
+    flex-grow: 1;
+  }
+
+  &__map{
+    width: 100%;
+    height: 100%;
+    min-height: var(--footer-modal-min-height);
+  }
+}
+
+@media (width <= 768px){
+  .o2c-footer-modal{
+    --footer-modal-padding: 40px 20px;
+    --footer-modal-min-height: 250px;
+  }
+}

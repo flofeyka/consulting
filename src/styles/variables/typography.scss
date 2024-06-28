@@ -1,0 +1,18 @@
+:root{
+  --font-size-body-1: 18px;
+  --font-size-header-1: 60px;
+  --font-size-header-2: 24px;
+  --font-size-header-3: 14px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+  --font-family-headings: 'Involve', 'Arial', sans-serif;
+  --font-family-base: 'Raleway', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+@media(width <= 768px){
+  :root{
+    --font-size-body-1: 16px;
+    --font-size-header-1: 32px;
+    --font-size-header-2: 20px;
+  }
+}

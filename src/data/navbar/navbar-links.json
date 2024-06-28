@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "text": "О компании",
+      "href": "#about"
+    },
+    {
+      "id": 2,
+      "text": "Практики",
+      "href": "#practices"
+    },
+    {
+      "id": 3,
+      "text": "Кейсы",
+      "href": "#cases"
+    },
+    {
+      "id": 4,
+      "text": "Команда",
+      "href": "#team"
+    },
+    {
+      "id": 5,
+      "text": "Новости",
+      "href": "#news"
+    }
+  ]
+}

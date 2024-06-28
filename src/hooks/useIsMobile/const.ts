@@ -1,0 +1,1 @@
+export const DEVICE_MOBILE_MAX_WIDTH = 768;

@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Квантовые технологии: какие риски для кибербезопасности?",
+      "date": "27.04.2024",
+      "href": "https://vc.ru/u/2897024-o2consulting/1148349-kvantovye-tehnologii-kakie-riski-dlya-kiberbezopasnosti"
+    },
+    {
+      "id": 2,
+      "title": "Монетизация каналов в Telegram: все тонкости с Toncoin",
+      "date": "1.05.2024",
+      "href": "https://vc.ru/u/2897024-o2consulting/1103237-monetizaciya-kanalov-v-telegram-vse-tonkosti-s-toncoin"
+    },
+    {
+      "id": 3,
+      "title": "Генная инженерия и искусственный интеллект. Эволюционный путь к сверхчеловеку",
+      "date": "6.03.2024",
+      "href": "https://vc.ru/u/2897024-o2consulting/1063899-gennaya-inzheneriya-i-iskusstvennyi-intellekt-evolyucionnyi-put-k-sverhcheloveku"
+    }
+  ]
+}

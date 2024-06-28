@@ -1,0 +1,28 @@
+.o2c-button{
+  --button-background-color: var(--color-base-background);
+  --button-background-color-hover: var(--color-base-background-hover);
+  --button-color: var( --color-text-primary);
+  --button-padding: 16px 24px;
+  --button-border-color: transparent;
+
+  border: 1px solid var(--button-border-color);
+  outline: none;
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  padding: var(--button-padding);
+  transition: background-color 0.075s linear;
+  border-radius: var(--border-radius-default);
+
+  &:hover{
+    --button-background-color: var(--button-background-color-hover);
+  }
+
+  &_view{
+    &_outline{
+      --button-color: inherit;
+      --button-background-color: transparent;
+      --button-background-color-hover: var(--color-line-generic-light);
+      --button-border-color: var(--color-line-generic-light);
+    }
+  }
+}

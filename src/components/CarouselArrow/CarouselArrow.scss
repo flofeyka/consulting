@@ -1,0 +1,36 @@
+.o2c-carousel-arrow{
+  --carousel-arrow-size: 60px;
+  --carousel-arrow-background-color: transparent;
+  --carousel-arrow-border-color: var(--color-line-generic-light);
+  --carousel-arrow-background-color-hover: var(--color-line-generic-light);
+
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--carousel-arrow-border-color);
+  width: var(--carousel-arrow-size);
+  height: var(--carousel-arrow-size);
+  background: var(--carousel-arrow-background-color);
+  transition: background-color 0.1s ease;
+  border-radius: var(--border-radius-default);
+
+  &:hover{
+    --carousel-arrow-background-color: var(--carousel-arrow-background-color-hover);
+  }
+
+  &:disabled{
+    cursor: not-allowed;
+    pointer-events: none;
+
+    --carousel-arrow-border-color: var(--color-background-generic);
+
+    color: var(--color-background-generic)
+  }
+}
+
+@media (width <=768px){
+  .o2c-carousel-arrow{
+    --carousel-arrow-size: 36px;
+  }
+}

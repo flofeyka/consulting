@@ -1,0 +1,30 @@
+.o2c-modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__button-cross{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  margin-bottom: 24px;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}

@@ -1,0 +1,332 @@
+.o2c-practices {
+  --practices-title-margin: 60px;
+  --practices-favor-list-max-height: 569px;
+  --practices-favor-list-max-width: 528px;
+  --practices-min-height: 901px;
+  --practices-dropdown-margin-bottom: 32px;
+  --practices-list-item-margin: 24px;
+
+  min-height: var(--practices-min-height);
+
+  &__title {
+    margin-bottom: var(--practices-title-margin);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 528px);
+  }
+
+  &__image {
+    width: 83%;
+    object-fit: contain;
+  }
+
+  &__dropdown {
+    display: block;
+    width: 100%;
+
+    --dropdown-color: var(--color-blue-secondary);
+    --dropdown-border-color: var(--color-blue-secondary);
+    --dropdown-background-color-hover: var(--color-blue-generic);
+
+    margin-bottom: var(--practices-dropdown-margin-bottom)
+  }
+
+  &__puzzle {
+    display: flex;
+    width: 660px;
+    margin-top: 200px;
+    margin-left: 190px;
+
+    &-center {
+      background-image: url("@/assets/images/practices/center-wheel.png");
+      width: 262px;
+      height: 261px;
+    }
+
+    &-selection {
+      transition: all 0.2s ease;
+      position: absolute;
+      cursor: pointer;
+      user-select: none;
+      outline: none;
+    }
+
+    &-first {
+      background-image: url("@/assets/images/practices/selection-investing.png");
+      margin-left: 264px;
+      margin-top: -100px;
+      width: 198px;
+      height: 280px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-investing.png");
+      }
+    }
+
+    &-second {
+      background-image: url("@/assets/images/practices/selection2.png");
+      width: 198px;
+      height: 231px;
+      margin-left: 264px;
+      margin-top: 134px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-banking.png");
+      }
+    }
+
+    &-third {
+      background-image: url("@/assets/images/practices/selection3.png");
+      width: 280px;
+      height: 198px;
+      margin-top: 265px;
+      margin-left: 85px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-government.png");
+      }
+    }
+
+    &-fourth {
+      background-image: url("@/assets/images/practices/selection4.png");
+      width: 231px;
+      height: 198px;
+      margin-top: 265px;
+      margin-left: -100px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-efficiency.png");
+      }
+    }
+
+    &-fifth {
+      background-image: url("@/assets/images/practices/selection5.png");
+      width: 198px;
+      height: 280px;
+      margin-top: 85px;
+      margin-left: -198px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-international.png");
+      }
+    }
+
+    &-sixth {
+      background-image: url("@/assets/images/practices/selection6.png");
+      width: 198px;
+      height: 231px;
+      margin-top: -100px;
+      margin-left: -198px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-strategy.png");
+      }
+    }
+
+    &-seventh {
+      background-image: url("@/assets/images/practices/selection7.png");
+      width: 280px;
+      height: 198px;
+      margin-top: -198px;
+      margin-left: -101px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-innovations.png");
+      }
+    }
+  }
+
+  &__favor-list {
+    max-height: var(--practices-favor-list-max-height);
+    max-width: var(--practices-favor-list-max-width);
+    list-style-position: outside;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var();
+    overflow-y: auto;
+  }
+
+  &__favor-list-item {
+    margin: var(--practices-list-item-margin) 0 0 47px;
+    padding-bottom: var(--practices-list-item-margin);
+    position: relative;
+    border-bottom: 1px solid var(--color-line-generic-dark);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+
+    &::before {
+      content: url('@/assets/icons/list-item.svg');
+      position: absolute;
+      left: -47px;
+      top: 0;
+    }
+  }
+}
+
+@media (width <= 950px) {
+  .o2c-practices {
+    --practices-padding: 50px 0 70px 0;
+    --practices-title-margin: 20px;
+    --practices-favor-list-max-width: 100%;
+    --practices-min-height: 991px;
+    --practices-list-item-margin: 16px;
+    --practices-dropdown-margin-bottom: 20px;
+
+    padding: var(--practices-padding);
+
+    &__puzzle {
+      margin-top: 20px;
+      width: auto;
+      margin-left: 0;
+      height: auto;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 630px;
+    }
+
+    &__list {
+      margin-top: 38px;
+    }
+
+
+    &__favor-list-item {
+      &::before {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
+
+@media (width <= 669px) {
+  .o2c-practices {
+    &__image-container {
+      height: 300px;
+    }
+
+    &__puzzle {
+      &-selection{
+        background-size: cover;
+      }
+
+      &-center {
+        background-image: url("@/assets/images/practices/center-wheel-mobile.png");
+        width: 133px;
+        height: 134px;
+
+      }
+
+      &-first {
+        background-image: url("@/assets/images/practices/selection-investing.png");
+        margin-left: 133px;
+        margin-top: -49px;
+        width: 101px;
+        height: 143px;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+      }
+
+      &-second {
+        background-image: url("@/assets/images/practices/selection2.png");
+        width: 101px;
+        height: 119px;
+        margin-left: 133px;
+        margin-top: 70px;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+
+      }
+
+      &-third {
+        background-image: url("@/assets/images/practices/selection3.png");
+        width: 143px;
+        height: 101px;
+        margin-top: 137px;
+        margin-left: 42px;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+      }
+
+      &-fourth {
+        background-image: url("@/assets/images/practices/selection4.png");
+        width: 118px;
+        height: 101px;
+        margin-top: 137px;
+        margin-left: -52px;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+      }
+
+      &-fifth {
+        background-image: url("@/assets/images/practices/selection5.png");
+        width: 101px;
+        height: 143px;
+        margin-top: 45px;
+        margin-left: -102px;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+      }
+
+      &-sixth {
+        background-image: url("@/assets/images/practices/selection6.png");
+        width: 101px;
+        height: 119px;
+        margin-top: -50px;
+        margin-left: -102px;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+      }
+
+      &-seventh {
+        background-image: url("@/assets/images/practices/selection7.png");
+        width: 143px;
+        height: 101px;
+        margin-top: -100px;
+        margin-left: -52px;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "title": "Телефон",
+      "link": {
+        "text": "+7 (495) 66-99-854",
+        "href": "telto:+74956699854"
+      }
+    },
+    {
+      "id": 2,
+      "title": "E-mail",
+      "link": {
+        "text": "info@o2consulting.ru",
+        "href": "mailto:info@o2consulting.ru"
+      }
+    }
+  ],
+  "social": [
+    {
+      "id": 0,
+      "link": {
+        "text": "ВКонтакте",
+        "href": "https://vk.com/public212695935"
+      }
+    },
+    {
+      "id": 1,
+      "link": {
+        "text": "Telegram",
+        "href": "https://t.me/O2Consult"
+      }
+    },
+    {
+      "id": 2,
+      "link": {
+        "text": "VC",
+        "href": "https://vc.ru/u/2897024-o2consulting"
+      }
+    }
+  ]
+}

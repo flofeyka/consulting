@@ -1,0 +1,61 @@
+{
+  "name": "o2-consulting",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Anton Fomichev",
+    "email": "av.fomichev01@yandex.ru",
+    "url": "https://github.com/anton-fomichev"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "stylelint": "stylelint \"**/*.{css,scss}\"",
+    "stylelint:fix": "stylelint \"**/*.{css,scss}\" --fix",
+    "typecheck": "tsc --noEmit",
+    "deploy": "npm run build && scp -r dist/* cpu2453714@ssh.cpu2453714.nichost.ru:/home/cpu2453714/new.o2consulting.ru/docs"
+  },
+  "dependencies": {
+    "@bem-react/classname": "^1.6.0",
+    "final-form": "^4.20.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropdown": "^1.11.0",
+    "react-final-form": "^6.5.9",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.24.0",
+    "react-slick": "^0.30.2",
+    "reset-css": "^5.0.2",
+    "slick-carousel": "^1.8.1",
+    "vite-plugin-svgr": "^4.2.0"
+  },
+  "devDependencies": {
+    "@gravity-ui/eslint-config": "^3.2.0",
+    "@types/node": "^20.13.0",
+    "@types/react": "^18.2.66",
+    "@types/react-burger-menu": "^2.8.7",
+    "@types/react-dom": "^18.2.22",
+    "@types/react-headroom": "^3.2.3",
+    "@types/react-modal": "^3.16.3",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "sass": "^1.77.3",
+    "sharp": "^0.33.4",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "svgo": "^3.3.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-image-optimizer": "^1.1.8"
+  }
+}

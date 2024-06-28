@@ -1,0 +1,62 @@
+@import './variables/typography';
+
+@mixin text-header-1(){
+  font-size: var(--font-size-header-1);
+  line-height: 1.15;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-headings);
+}
+
+@mixin text-header-2(){
+  font-size: var(--font-size-header-2);
+  line-height: 1.25;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-headings);
+}
+
+@mixin text-header-3(){
+  font-size: var(--font-size-header-3);
+  line-height: 1.5;
+  font-weight: var(--font-weight-regular);
+}
+
+@mixin text-body-1(){
+  font-size: var(--font-size-body-1);
+  line-height: 1.5;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-base);
+}
+
+@mixin hover-underline(){
+  &::before{
+    content: "";
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text-primary);
+    transition: opacity 0.1s linear;
+  }
+
+  &:hover::before{
+    opacity: 1;
+  }
+}
+
+@mixin scrollbar-thin {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: var(--color-line-generic-light);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-base-background);
+    border-radius: 10px 
+  }
+}

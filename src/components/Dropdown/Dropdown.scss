@@ -1,0 +1,43 @@
+.o2c-dropdown{
+  --dropdown-background-color: transparent;
+  --dropdown-background-color-hover: var(--color-line-generic-light);
+  --dropdown-border-color: var(--color-line-generic-light);
+  --dropdown-color: inherit;
+
+  max-width: 100%;
+
+  &__dropdown-control.Dropdown-control{
+    display: flex;
+    align-items: center;
+    color: var(--dropdown-color);
+    font-size: inherit;
+    font-family: inherit;
+    background-color: var(--dropdown-background-color);
+    padding: 16px 24px;
+    gap: 12px;
+    cursor: pointer;
+    border: 1px solid var(--dropdown-border-color);
+    transition: background-color 0.1s linear;
+
+    &:hover {
+      --dropdown-background-color: var(--dropdown-background-color-hover);
+    }
+  }
+
+  &__dropdown-placeholder{
+    flex-grow: 1;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+  }
+
+  &__dropdown-arrow{
+    color: inherit;
+    transition: transform 0.1s linear;
+
+    &_open{
+      transform: rotate(180deg);
+    }
+  }
+}
