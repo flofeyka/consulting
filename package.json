@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://flofeyka.github.io/consulting",
   "author": {
     "name": "Anton Fomichev",
     "email": "av.fomichev01@yandex.ru",
@@ -22,6 +23,7 @@
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
     "final-form": "^4.20.10",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropdown": "^1.11.0",
