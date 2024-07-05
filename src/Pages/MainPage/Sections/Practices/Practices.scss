@@ -54,14 +54,14 @@
     }
 
     &-first {
-      background-image: url("@/assets/images/practices/selection-investing.png");
+      background-image: url("@/assets/images/practices/selection.png");
       margin-left: 264px;
       margin-top: -100px;
       width: 198px;
       height: 280px;
 
       &:hover {
-        background-image: url("@/assets/images/practices/selection-active-investing.png");
+        background-image: url("@/assets/images/practices/selection-active-marketing.png");
       }
     }
 
@@ -73,7 +73,7 @@
       margin-top: 134px;
 
       &:hover {
-        background-image: url("@/assets/images/practices/selection-active-banking.png");
+        background-image: url("@/assets/images/practices/selection-active-efficiency.png");
       }
     }
 
@@ -109,31 +109,44 @@
       margin-left: -198px;
 
       &:hover {
-        background-image: url("@/assets/images/practices/selection-active-international.png");
+        background-image: url("@/assets/images/practices/selection-active-transformation.png");
       }
     }
 
     &-sixth {
       background-image: url("@/assets/images/practices/selection6.png");
-      width: 198px;
-      height: 231px;
+      width: 197px;
+      height: 230px;
       margin-top: -100px;
       margin-left: -198px;
 
       &:hover {
-        background-image: url("@/assets/images/practices/selection-active-strategy.png");
+        background-image: url("@/assets/images/practices/selection-active-innovation-projects.png");
       }
     }
 
     &-seventh {
       background-image: url("@/assets/images/practices/selection7.png");
       width: 280px;
-      height: 198px;
-      margin-top: -198px;
-      margin-left: -101px;
+      height: 195px;
+      margin-top: -199px;
+      margin-left: -100px;
 
       &:hover {
-        background-image: url("@/assets/images/practices/selection-active-innovations.png");
+        background-image: url("@/assets/images/practices/selection-active-strategy.png");
+      }
+      
+    }
+
+    &-eighth {
+      background-image: url("@/assets/images/practices/selection8.png");
+      width: 230px;
+      height: 198px;
+      margin-top: -198px;
+      margin-left: 134px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-banking.png");
       }
     }
   }
