@@ -12,6 +12,14 @@
     margin-bottom: var(--practices-title-margin);
   }
 
+  &__subtitle {
+    margin-top: 15px;
+  }
+
+  &__subtitle-container {
+    margin-left: 15px;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 1fr minmax(300px, 528px);

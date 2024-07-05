@@ -98,7 +98,7 @@ export const Practices = ({ className }: IProps) => {
                   practicesCn('puzzle-selection')
                 }
               ></div>
-                            <div
+              <div
                 id={'innovation-projects'}
                 onMouseEnter={() => setActiveSection(SectionType.InnovationProjects)}
                 className={
@@ -141,11 +141,14 @@ export const Practices = ({ className }: IProps) => {
               onChange={(arg) => setActiveSection(arg.value as SectionType)}
               value={casesSections[activeSection]}
             />
-            <ul className={practicesCn('favor-list')}>
+            <ul itemType='disc' className={practicesCn('favor-list')}>
               {practicesFavor[activeSection].map((favor) => (
-                <li className={practicesCn('favor-list-item')} key={favor}>
-                  {favor}
-                </li>
+                <div className={practicesCn('favor-list-item')} key={favor.id}>
+                  {favor.title}
+                  <ul className={practicesCn("subtitle-container")}>
+                    {favor.subtitles.map(subtitle => <p key={subtitle} className={practicesCn("subtitle")}>&bull; {subtitle}</p>)}
+                  </ul>
+                </div>
               ))}
             </ul>
           </div>
