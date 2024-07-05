@@ -54,8 +54,8 @@ export const Practices = ({ className }: IProps) => {
             <div className={practicesCn('puzzle')}>
               <div className={practicesCn('puzzle-center')}></div>
               <div
-                id={'investing'}
-                onMouseEnter={() => setActiveSection(SectionType.Investing)}
+                id={'marketing'}
+                onMouseEnter={() => setActiveSection(SectionType.Marketing)}
                 className={
                   practicesCn('puzzle-first') +
                   ' ' +
@@ -63,8 +63,8 @@ export const Practices = ({ className }: IProps) => {
                 }
               ></div>
               <div
-                id={'banking'}
-                onMouseEnter={() => setActiveSection(SectionType.Banking)}
+                id={'efficiency'}
+                onMouseEnter={() => setActiveSection(SectionType.Efficiency)}
                 className={
                   practicesCn('puzzle-second') +
                   ' ' +
@@ -81,8 +81,8 @@ export const Practices = ({ className }: IProps) => {
                 }
               ></div>
               <div
-                id={'efficiency'}
-                onMouseEnter={() => setActiveSection(SectionType.Efficiency)}
+                id={'investing'}
+                onMouseEnter={() => setActiveSection(SectionType.Investing)}
                 className={
                   practicesCn('puzzle-fourth') +
                   ' ' +
@@ -90,10 +90,19 @@ export const Practices = ({ className }: IProps) => {
                 }
               ></div>
               <div
-                id={'international'}
-                onMouseEnter={() => setActiveSection(SectionType.International)}
+                id={'transformation'}
+                onMouseEnter={() => setActiveSection(SectionType.Transformation)}
                 className={
                   practicesCn('puzzle-fifth') +
+                  ' ' +
+                  practicesCn('puzzle-selection')
+                }
+              ></div>
+                            <div
+                id={'innovation-projects'}
+                onMouseEnter={() => setActiveSection(SectionType.InnovationProjects)}
+                className={
+                  practicesCn('puzzle-sixth') +
                   ' ' +
                   practicesCn('puzzle-selection')
                 }
@@ -102,16 +111,16 @@ export const Practices = ({ className }: IProps) => {
                 id={'strategy'}
                 onMouseEnter={() => setActiveSection(SectionType.Strategy)}
                 className={
-                  practicesCn('puzzle-sixth') +
+                  practicesCn('puzzle-seventh') +
                   ' ' +
                   practicesCn('puzzle-selection')
                 }
               ></div>
               <div
-                id={'innovations'}
-                onMouseEnter={() => setActiveSection(SectionType.Innovations)}
+                id={'banking'}
+                onMouseEnter={() => setActiveSection(SectionType.Banking)}
                 className={
-                  practicesCn('puzzle-seventh') +
+                  practicesCn('puzzle-eighth') +
                   ' ' +
                   practicesCn('puzzle-selection')
                 }
