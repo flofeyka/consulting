@@ -249,7 +249,7 @@
       }
 
       &-first {
-        background-image: url("@/assets/images/practices/selection-investing.png");
+        background-image: url("@/assets/images/practices/selection.png");
         margin-left: 133px;
         margin-top: -49px;
         width: 101px;
@@ -334,6 +334,18 @@
         margin-top: -100px;
         margin-left: -52px;
         background-repeat: no-repeat;
+
+        &:hover{
+          background-image: none;
+        }
+      }
+
+      &-eighth {
+        background-image: url("@/assets/images/practices/selection8.png");
+        width: 115px;
+        height: 101px;
+        margin-top: -99px;
+        margin-left: 68px;
 
         &:hover{
           background-image: none;
