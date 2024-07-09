@@ -161,8 +161,21 @@
     --hero-statistics-item-width: 100%;
     --hero-statistics-item-text-s: 22px;
     --header-height: 76px;
-    --hero-bottom-padding: 40px;
-    --hero-title-margin-top: 96px;
+    --hero-bottom-padding: 20px;
+    --hero-title-margin-top: 40px;
+
+
+    &__slider-prev {
+      visibility: hidden;
+    }
+  
+    &__slider-next {
+      visibility: hidden;
+    }
+
+    &__slider-dot {
+      visibility: hidden;
+    }
 
     &.o2c-section{
       padding-top: var(--header-height);
@@ -201,7 +214,7 @@
     &__statistics-item{
       display: grid;
       grid-template-columns: 120px 1fr;
-      column-gap: 20px;
+      column-gap: 30px;
       align-items: center;
       width: var(--hero-statistics-item-width);
       padding: var(--hero-statistics-item-padding) 0;
@@ -218,6 +231,7 @@
     }
 
     &__statistics-item-title{
+      font-size: 35px; 
       text-align: left;
       margin: 0;
     }

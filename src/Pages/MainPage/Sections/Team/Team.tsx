@@ -86,7 +86,7 @@ export const Team = ({ className }: IProps) => {
                       <img
                         className={teamCn('carousel-item-image')}
                         alt={carouselItem.name}
-                        src={`/team/${carouselItem.id}.webp`}
+                        src={`/team/${carouselItem.id}.png`}
                         width={416}
                         height={560}
                       />
