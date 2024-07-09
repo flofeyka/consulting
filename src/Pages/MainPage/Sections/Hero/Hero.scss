@@ -5,12 +5,12 @@
   --hero-min-height: 890px;
   --hero-title-max-width: 1034px;
   --hero-bottom-padding: 60px;
-  --hero-statistics-item-padding: 16px;
+  --hero-statistics-item-padding: 10px;
   --hero-statistics-item-width: 250px;
-  --hero-statistics-item-title-font-size: 54px;
+  --hero-statistics-item-title-font-size: 40px;
   --hero-statistics-item-description-font-size: 14px;
   --hero-statistics-item-title-margin: 10px;
-  --hero-statistics-item-text-s: 34px;
+  --hero-statistics-item-text-s: 24px;
 
   position: relative;
   background-image: url('@/assets/images/main-page/hero-background.jpg');
@@ -157,7 +157,7 @@
   .o2c-hero{
     --hero-min-height: 742px;
     --hero-title-max-width: 100%;
-    --hero-statistics-item-title-font-size: 36px;
+    --hero-statistics-item-title-font-size: 30px;
     --hero-statistics-item-width: 100%;
     --hero-statistics-item-text-s: 22px;
     --header-height: 76px;

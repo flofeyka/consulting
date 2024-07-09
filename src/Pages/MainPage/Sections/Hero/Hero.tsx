@@ -63,11 +63,11 @@ export const Hero = ({ className }: IProps) => {
                 <li className={heroCn(`statistics-item`)} key={statisticItem.id}>
                   <h2 className={heroCn('statistics-item-title')}>
                     <span className={heroCn('statistics-item-text')}>
-                      {statisticItem.title.split(' ')[0]}
+                      {statisticItem.title}
                     </span>
                     <span className={heroCn('statistics-item-text_s')}>
                       {' '}
-                      {statisticItem.title.split(' ')[1]}
+                      {statisticItem.subtitle}
                     </span>
                   </h2>
                   <p className={heroCn('statistics-item-description')}>
