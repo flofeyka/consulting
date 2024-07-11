@@ -87,8 +87,6 @@ export const Team = ({ className }: IProps) => {
                         className={teamCn('carousel-item-image')}
                         alt={carouselItem.name}
                         src={`/team/${carouselItem.id}.png`}
-                        width={416}
-                        height={560}
                       />
                       <div className={teamCn('carousel-item-info')}>
                         <h3 className={teamCn('worker-name')}>

@@ -61,18 +61,6 @@
       outline: none;
     }
 
-    &-first {
-      background-image: url("@/assets/images/practices/selection.png");
-      margin-left: 264px;
-      margin-top: -100px;
-      width: 198px;
-      height: 280px;
-
-      &:hover {
-        background-image: url("@/assets/images/practices/selection-active-marketing.png");
-      }
-    }
-
     &-second {
       background-image: url("@/assets/images/practices/selection2.png");
       width: 198px;
@@ -84,6 +72,18 @@
         background-image: url("@/assets/images/practices/selection-active-efficiency.png");
       }
     }
+    
+    &-first {
+      background-image: url("@/assets/images/practices/selection.png");
+      margin-left: 264px;
+      margin-top: -100px;
+      width: 198px;
+      height: 280px;
+
+      &:hover {
+        background-image: url("@/assets/images/practices/selection-active-banking.png");
+      }
+    }
 
     &-third {
       background-image: url("@/assets/images/practices/selection3.png");
@@ -93,7 +93,7 @@
       margin-left: 85px;
 
       &:hover {
-        background-image: url("@/assets/images/practices/selection-active-government.png");
+        background-image: url("@/assets/images/practices/selection-active-efficiency.png");
       }
     }
 
@@ -105,7 +105,7 @@
       margin-left: -100px;
 
       &:hover {
-        background-image: url("@/assets/images/practices/selection-active-efficiency.png");
+        background-image: url("@/assets/images/practices/selection-active-government.png");
       }
     }
 
