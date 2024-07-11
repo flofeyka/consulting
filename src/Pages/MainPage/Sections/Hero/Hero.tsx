@@ -55,6 +55,14 @@ export const Hero = ({ className }: IProps) => {
             Заказать бесплатную консультацию
           </Button>
           <ul className={heroCn("statistic-container")}>
+            <div className={heroCn("mobile-sliders-container")}>
+              <button onClick={prevSlide}>
+                <div className={heroCn("mobile-slider-vector")}>&lt;</div>
+              </button>
+              <button onClick={nextSlide}>
+                <div className={heroCn("mobile-slider-vector")}>&gt;</div>
+              </button>
+            </div>
             <div className={heroCn('statistics')}>
               <button className={heroCn('slider-prev')} onClick={prevSlide}>
                 &lt;
