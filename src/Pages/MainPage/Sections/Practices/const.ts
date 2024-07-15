@@ -7,4 +7,6 @@ export const PRACTICES_DROPDOWN_SECTIONS = [
   SectionType.Marketing,
   SectionType.Strategy,
   SectionType.Transformation,
+  SectionType.Banking,
+  SectionType.InnovationProjects
 ];
