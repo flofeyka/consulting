@@ -1,6 +1,6 @@
 @import '@/styles/mixins';
 
-.o2c-footer{
+.o2c-footer {
   --footer-color: var(--color-white);
   --footer-padding: 70px;
   --footer-contacts-title-margin-bottom: 40px;
@@ -21,98 +21,98 @@
   background-size: cover;
   color: var(--footer-color);
 
-  &__wrapper{
+  &__wrapper {
     display: grid;
     padding: var(--footer-padding) 0;
-    grid-template-columns:  minmax(auto, 528px) 1fr;
+    grid-template-columns: minmax(auto, 528px) 1fr;
     gap: 28px;
     border-bottom: 1px solid var(--color-line-generic-light);
   }
 
-  &__contacts{
+  &__contacts {
     align-self: start;
   }
 
-  &__contacts-title{
+  &__contacts-title {
     margin-bottom: var(--footer-contacts-title-margin-bottom);
   }
 
-  &__footer-contacts-list{
+  &__footer-contacts-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "address address"
-    "phone email"
-    "social social"
-    "scheme scheme";
+    grid-template-areas:
+      "address address"
+      "phone email"
+      "social social"
+      "scheme scheme";
     gap: var(--footer-contacts-list-gap);
     padding-bottom: var(--footer-contacts-padding-bottom);
     border-bottom: 1px solid var(--color-line-generic-light);
   }
 
-  &__footer-contacts-item{
-    &:first-of-type{
+  &__footer-contacts-item {
+    &:first-of-type {
       grid-area: address;
     }
 
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       grid-area: phone;
     }
 
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       grid-area: email;
     }
 
-    &:nth-of-type(4){
+    &:nth-of-type(4) {
       grid-area: social;
     }
 
-    &:nth-of-type(5){
+    &:nth-of-type(5) {
       grid-area: scheme;
     }
   }
 
-  &__footer-contact-title{
+  &__footer-contact-title {
     margin-bottom: 4px;
   }
 
-  &__footer-contact-link{
+  &__footer-contact-link {
     font-size: var(--footer-contacts-link-font-size);
     white-space: nowrap;
     opacity: 0.5;
 
     @include hover-underline;
 
-    &::before{
+    &::before {
       background-color: var(--footer-color);
     }
 
-    &:first-of-type{
+    &:first-of-type {
       white-space: inherit;
     }
   }
 
-  &__footer-contacts-scheme-button{
+  &__footer-contacts-scheme-button {
     display: block;
     width: 100%;
   }
 
-  &__form-title{
+  &__form-title {
     margin-bottom: var(--footer-form-title-margin-bottom);
   }
 
-  &__form{
+  &__form {
     justify-self: flex-end;
   }
 
-  &__form-row{
-    &_multiple{
+  &__form-row {
+    &_multiple {
       display: flex;
       gap: var(--footer-form-input-padding);
     }
   }
 
-  &__form-input{
+  &__form-input {
     outline: 0;
     border: 0;
     display: block;
@@ -121,20 +121,20 @@
     background-color: transparent;
     resize: none;
     border-bottom: 1px solid var(--color-line-generic-light);
-    
-    &::placeholder{
+
+    &::placeholder {
       color: inherit;
       opacity: 0.25
     }
   }
 
-  &__form-button{
+  &__form-button {
     display: block;
     width: 100%;
     margin-top: var(--footer-form-button-margin-top);
   }
 
-  &__copyright{
+  &__copyright {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,64 +142,66 @@
     opacity: 0.5;
   }
 
-  &__footer-social{
+  &__footer-social {
     display: flex;
     flex-direction: column;
     gap: calc(var(--footer-contacts-list-gap) / 3);
   }
 
-  &__footer-files{
+  &__footer-files {
     padding-top: var(--footer-files-padding-top);
   }
 
-  &__footer-files-header{
+  &__footer-files-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: var(--footer-files-header-padding-bottom);
   }
 
-  &__footer-files-buttons{
+  &__footer-files-buttons {
     display: flex;
     gap: 16px;
   }
 
-  &__carousel-wrapper{
+  &__carousel-wrapper {
     margin-bottom: var(--footer-carousel-wrapper-margin-bottom);
   }
 
-  &__carousel-item-container{
+  &__carousel-item-container {
     display: grid;
     gap: 20px;
     grid-template-columns: 60px 440px;
   }
 
-  &__carousel-item-link{
+  &__carousel-item-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
-    height: 60px;
+    min-height: 60px;
     border: 1px solid var(--color-line-generic-light);
     transition: background-color 0.075s linear;
 
-    &:hover{
+    &:hover {
       background-color: var(--color-line-generic-light);
     }
   }
 
-  &__carousel-item-data{
+  &__carousel-item-data {
     opacity: 0.7;
+    word-break: break-all;
   }
 
-  &__carousel-item-title{
-
+  &__carousel-item-title {
     @include text-body-1;
-
     margin-bottom: 2px;
+    word-break:normal;
+    display: flex;
+    width: 60%;
   }
 
-  &__carousel-item-meta{
+  &__carousel-item-meta {
 
     @include text-header-3;
 
@@ -207,7 +209,7 @@
     gap: 24px;
   }
 
-  &__footer-files-button{
+  &__footer-files-button {
     display: block;
     width: 100%;
     padding: 16px;
@@ -216,15 +218,15 @@
   }
 }
 
-.o2c-footer__footer-files .slick-slide{
+.o2c-footer__footer-files .slick-slide {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-@media (width <= 450) {
-  .o2c-footer{
-    &__carousel-item-container{
+@media (width <=450) {
+  .o2c-footer {
+    &__carousel-item-container {
       display: grid;
       gap: 20px;
       grid-template-columns: 60px auto;
@@ -232,8 +234,8 @@
   }
 }
 
-@media (width <=1031px){
-  .o2c-footer{
+@media (width <=1031px) {
+  .o2c-footer {
     --footer-form-title-margin-bottom: 20px;
     --footer-padding: 50px;
     --footer-contacts-title-margin-bottom: 32px;
@@ -244,27 +246,27 @@
     --footer-contacts-padding-bottom: 50px;
     --footer-carousel-wrapper-margin-bottom: 32px;
 
-    &__wrapper{
+    &__wrapper {
       display: flex;
       flex-direction: column-reverse;
       gap: 50px;
     }
 
-    &__form{
+    &__form {
       padding-bottom: 50px;
       border-bottom: 1px solid var(--color-line-generic-light);
     }
 
-    &__contacts{
+    &__contacts {
       width: 100%;
     }
 
-    &__footer-contacts-list{
+    &__footer-contacts-list {
       row-gap: 32px;
     }
 
-    &__form-row{
-      &_multiple{
+    &__form-row {
+      &_multiple {
         display: flex;
         flex-direction: column;
         gap: 0;
