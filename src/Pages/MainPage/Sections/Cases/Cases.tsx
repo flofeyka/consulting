@@ -71,11 +71,11 @@ export const Cases = ({ className }: IProps) => {
                       {carouselItem.title}
                     </h3>
                     {carouselItem.buttons.map((button: any) => (
-                      <Link to={button.buttonUrl}>
+                      <a href={`/PDF/${button.buttonUrl}`}>
                         <button className={casesCn('carousel-item-button')}>
                           {button.title ? button.title : "Узнать подробнее"}
                         </button>
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
