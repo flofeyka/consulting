@@ -24,19 +24,14 @@
     visibility: hidden;
     display: flex;
     align-self: flex-end;
-    margin-bottom: -50px;
     button {
       border: white 0.5px solid;
       margin-right: 5px;
       border-radius: 3px;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
     }
 
-    div {
-      font-size: 15px;
-      transform: scale(.9, 2.5);
-    }
   }
 
   &__slider {
@@ -58,12 +53,10 @@
 
   &__slider-prev {
     font-size: 45px;
-    transform: scale(.8, 2);
   }
 
   &__slider-next {
     font-size: 45px;
-    transform: scale(.8, 2);
   }
   
   &__slide {
@@ -77,11 +70,11 @@
   }
   
   &__slider-dot {
-    height: 50px;
+    height: 25px;
     border-radius: 50%;
     background-color: #ccc;
     margin: 0 5px;
-    width: 50px;
+    width: 25px;
     padding-left: 15px;
     cursor: pointer;
   }
@@ -161,6 +154,11 @@
     text-align: center;
   }
 
+  &__statistics-item-text {
+    font-family: "Involve";
+    src: "/involve/Involve-Semibold.woff"
+  }
+
   &__statistics-item-text_s{
     font-size: var(--hero-statistics-item-text-s);
   }
@@ -216,6 +214,7 @@
 
     &__mobile-sliders-container {
       visibility: visible;
+      z-index: 100;
     }
 
     &__info{
@@ -235,6 +234,7 @@
     }
 
     &__statistics{
+      margin-top: -75px;
       width: 100%;
       flex-direction: column;
     }

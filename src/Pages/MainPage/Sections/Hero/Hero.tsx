@@ -8,7 +8,7 @@ import { scrollToAnchor } from '@/utils/scrollToAnchor';
 import { HERO_STATISTICS_INTERVAL_DELAY } from './const';
 
 import { heroStatistics } from '@/data/hero/hero-statistics.json';
-
+import {motion} from "framer-motion";
 import './Hero.scss';
 
 const heroCn = cn('hero');
@@ -57,18 +57,23 @@ export const Hero = ({ className }: IProps) => {
           <ul className={heroCn("statistic-container")}>
             <div className={heroCn("mobile-sliders-container")}>
               <button onClick={prevSlide}>
-                <div className={heroCn("mobile-slider-vector")}>&lt;</div>
+                <img height={15} src="/VectorPrev.svg" />
               </button>
               <button onClick={nextSlide}>
-                <div className={heroCn("mobile-slider-vector")}>&gt;</div>
+                <img height={15} src="/VectorNext.svg" />
               </button>
             </div>
             <div className={heroCn('statistics')}>
               <button className={heroCn('slider-prev')} onClick={prevSlide}>
-                &lt;
+                <img src="/VectorPrev.svg" />
               </button>
               {heroStatistics[statisticsIndex].items.map((statisticItem) => (
-                <li className={heroCn(`statistics-item`)} key={statisticItem.id}>
+                    <motion.div key={statisticItem.id}
+                    className={heroCn(`statistics-item`)} 
+                    initial={{ opacity: 0}} // Начальное состояние
+                    animate={{ opacity: 1, x: 0 }}    // Конечное состояние
+                    transition={{ duration: 1 }}    // Параметры анимации
+                  >
                   <h2 className={heroCn('statistics-item-title')}>
                     <span className={heroCn('statistics-item-text')}>
                       {statisticItem.title}
@@ -81,10 +86,10 @@ export const Hero = ({ className }: IProps) => {
                   <p className={heroCn('statistics-item-description')}>
                     {statisticItem.description}
                   </p>
-                </li>
+                    </motion.div>
               ))}
               <button className={heroCn("slider-next")} onClick={nextSlide}>
-                &gt;
+                <img src="/VectorNext.svg" />
               </button>
             </div>
             <div>
