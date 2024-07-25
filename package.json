@@ -22,7 +22,9 @@
   },
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
+    "@types/react-transition-group": "^4.4.10",
     "final-form": "^4.20.10",
+    "framer-motion": "^11.3.17",
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -31,6 +33,7 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.24.0",
     "react-slick": "^0.30.2",
+    "react-transition-group": "^4.4.5",
     "reset-css": "^5.0.2",
     "slick-carousel": "^1.8.1",
     "vite-plugin-svgr": "^4.2.0"
