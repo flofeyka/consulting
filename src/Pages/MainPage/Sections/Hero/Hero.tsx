@@ -57,10 +57,10 @@ export const Hero = ({ className }: IProps) => {
           <ul className={heroCn("statistic-container")}>
             <div className={heroCn("mobile-sliders-container")}>
               <button onClick={prevSlide}>
-                <img height={15} src="/VectorPrev.svg" />
+                <img height={12} src="/VectorPrev.svg" />
               </button>
               <button onClick={nextSlide}>
-                <img height={15} src="/VectorNext.svg" />
+                <img height={12} src="/VectorNext.svg" />
               </button>
             </div>
             <div className={heroCn('statistics')}>
