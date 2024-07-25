@@ -71,7 +71,7 @@ export const Cases = ({ className }: IProps) => {
                       {carouselItem.title}
                     </h3>
                     {carouselItem.buttons.map((button: any) => (
-                      <a href={`/PDF/${button.buttonUrl}`}>
+                      <a href={button.title ? `${button.buttonUrl}` : `/PDF/${button.buttonUrl}`}>
                         <button className={casesCn('carousel-item-button')}>
                           {button.title ? button.title : "Узнать подробнее"}
                         </button>
