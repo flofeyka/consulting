@@ -2,7 +2,7 @@
   --team-element-padding: 36px;
   --team-min-height: 730px;
   --team-carousel-item-height: 560px;
-  --team-carousel-item-padding: 18px;
+  --team-carousel-item-padding: 5px;
   --team-carousel-item-info-position: 20px;
   --team-worker-name-font-size: 24px;
   --team-worker-grade-font-size: inherit;
@@ -21,7 +21,7 @@
 
   &__info{
     grid-area: info;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     max-height: var(--team-carousel-item-height);
